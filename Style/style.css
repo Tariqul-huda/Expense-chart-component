@@ -1,0 +1,152 @@
+:root{
+    --color-soft-red:hsl(10, 79%, 65%);
+    --color-cyan:hsl(186, 34%, 60%);
+    --color-dark-brown:hsl(25, 47%, 15%);
+    --color-medium-brown:hsl(28, 10%, 53%);
+    --color-cream:hsl(27, 66%, 92%);
+    --color-very-pale-orange:hsl(33, 100%, 98%);
+
+}
+*{
+    box-sizing: border-box;
+}
+/* For Mobile  */
+html{
+    width:375px;
+
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-size:18px;
+    background-color: var(--color-cream);
+}
+ul{
+    list-style-type: none;
+    
+}
+li{
+    display: inline-block;
+}
+p{
+    margin-bottom: 0;
+    color:var(--color-medium-brown);
+}
+/* Grid  */
+.grid{
+    display: grid;
+}
+.grid--1x2{
+    grid-template-columns: repeat(2,1fr);
+}
+/* Flexbox */
+.flex{
+    display: flex;
+}
+.flex-bottom{
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.expense{
+    width:342px;
+}
+/* Expense balance first part */
+.expense-balance{
+    height: 90px;
+    width:inherit;
+    border-radius: 10px;
+}
+.expense-balance-status{
+    align-self: center;
+}
+.expense-balance-status-amount{
+    margin-top: 5px;
+    font-size: 20px;
+    
+}
+.expense-balance-container{
+    width:298px;
+    height: inherit;
+    margin-left:20px;
+}
+.expense-balance-title{
+    font-size: 12px;
+    font-weight: 700;
+    margin-top:0;
+    color:var(--color-cream)
+
+}
+.expense-balance-bg--orange{
+    background-color: var(--color-soft-red);
+}
+.expense-balance-logo{
+    justify-self: end;
+    align-self: center;
+    height:60px;
+    width:60px;
+}
+.font-white{
+    color:white;
+}
+/* Expense Chart section  */
+.expense-chart-container{
+    background-color: white;
+    border-radius: 10px;
+}
+.expense-chart{
+    min-height:355px;
+    width: 298px;
+    margin-left:20px;
+}
+.expense-chart-day{
+    color:var(--color-medium-brown);
+}
+.expense-chart__header{
+    padding-top: 20px;
+    color:var(--color-dark-brown)
+}
+/* Expense chart bar */
+.expense-chart-bar__section{
+    
+    height: 195px;
+    padding-left:0px;
+}
+.expense-chart-bar{
+    /* border:1px solid red; */
+    width:35px;
+    height: 43%;
+    flex-wrap: nowrap;
+    border-radius: 4px;
+    background-color: var(--color-soft-red);
+}
+#expense-chart-bar-mon{
+    height:100%;
+}
+/* Expense chart day  */
+.expense-chart-day{
+    padding-left:0;
+    width:298px;
+    font-size:smaller;
+    padding-bottom:30px;
+    border-bottom: 3px solid var(--color-cream);
+}
+/* .expense Chart per month amount  */
+.expense-balance-total{
+    font-size: 15px;
+    margin-top: 0;
+}
+.expense-balance-amount{
+    margin-top: 5px;
+    font-size: 30px;
+    color:var(--color-dark-brown)
+}
+/* expense chart per month amount 2nd part  */
+.expense-balance--2{
+    justify-self: end;
+    align-self: center;
+}
+.expense-balance-percentage{
+    text-align: end;
+}
+/* For Mobile end*/
+
+/* Desktop Start */

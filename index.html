@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Adding font styles  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Adding style sheet  -->
+  <link rel="stylesheet" href="Style/style.css">
+  <!-- Adding Script  -->
+  <script type ="text/javascript" src="data.json" defer></script>
+  <script type ="module" src="Script/script.js" defer></script>
   
   <title>Frontend Mentor | Expenses chart component</title>
 
@@ -16,24 +26,52 @@
 </head>
 <body>
 
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
+  <main class="expense">
+    <div class="expense-balance expense-balance-bg--orange expense-balance-border">
+      <div class="expense-balance-container grid grid--1x2">
+        <div class="expense-balance-status">
+          <p class="expense-balance-title">My balance</p>
+          <p class="expense-balance-status-amount font-white">$921.48</p>
+        </div>
+        <img class ="expense-balance-logo" src="images/logo.svg" alt="two circle logo">
+      </div>
+    </div>
+    <section class="expense-chart-container">
+      <div class="expense-chart">
+        <h3 class="expense-chart__header">Spending - Last 7 days</h3>
+        <div class="expense-chart-status">
+          <ul class="flex flex-bottom expense-chart-bar__section">
+            <li class="expense-chart-bar expense-chart-bar--active" id="expense-chart-bar-mon"></li>
+            <li class="expense-chart-bar expense-chart-bar--active" id="expense-chart-bar-tue"></li>
+            <li class="expense-chart-bar expense-chart-bar--active" id="expense-chart-bar-wed"></li>
+            <li class="expense-chart-bar expense-chart-bar--active" id="expense-chart-bar-thu"></li>
+            <li class="expense-chart-bar expense-chart-bar--active" id="expense-chart-bar-fri"></li>
+            <li class="expense-chart-bar expense-chart-bar--active" id="expense-chart-bar-sat"></li>
+            <li class="expense-chart-bar expense-chart-bar--active" id="expense-chart-bar-sun"></li>
+          </ul>
+          <ul class="flex flex-bottom expense-chart-day">
+            <li>mon</li>
+            <li>tue</li>
+            <li>wed</li>
+            <li>thu</li>
+            <li>fri</li>
+            <li>sat</li>
+            <li>sun</li>
+          </ul>
+        </div>
+        <div class="expense-balance grid grid--1x2">
+          <div class="expense-balance--1">
+            <p class="expense-balance-total">Total this month</p>
+            <p class="expense-balance-amount">$478.33</p>
+          </div>
+          <div class="expense-balance--2">
+            <div class="expense-balance-percentage">+2.4%</div>
+            <p class="expense-balance-total">from last month</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
