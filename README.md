@@ -1,1 +1,1 @@
-![Live site](https://tariqul-huda.github.io/Expense-chart-component/)
+[Live site](https://tariqul-huda.github.io/Expense-chart-component/)
