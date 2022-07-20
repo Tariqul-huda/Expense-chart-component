@@ -90,4 +90,5 @@ function removeElement(num){
 for(let count=0;count<bar.length;count++){
     bar[count].addEventListener('mouseenter',addElement.bind(this,count))
     bar[count].addEventListener('mouseleave',removeElement.bind(this,count))
+    bar[count].addEventListener('touchend',removeElement.bind(this,count))
 }
