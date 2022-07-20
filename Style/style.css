@@ -49,6 +49,7 @@ p{
 .expense{
     width:342px;
     margin:50px auto;
+    margin-bottom: 0;
 }
 /* Expense balance first part */
 .expense-balance{
@@ -176,7 +177,8 @@ p{
         width:auto;
     }
     .expense{
-        margin: 20px auto;
+        margin: 100px auto;
+        margin-bottom: 0;
     }
     
 }
