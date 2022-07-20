@@ -11,10 +11,10 @@
     box-sizing: border-box;
 }
 /* For Mobile  */
-html{
+/* html{
     width:375px;
 
-}
+} */
 body{
     font-family: 'DM Sans', sans-serif;
     font-size:18px;
@@ -48,6 +48,7 @@ p{
 }
 .expense{
     width:342px;
+    margin:50px auto;
 }
 /* Expense balance first part */
 .expense-balance{
@@ -107,19 +108,19 @@ p{
 /* Expense chart bar */
 .expense-chart-bar__section{
     
-    height: 195px;
+    height: 180px;
     padding-left:0px;
 }
 .expense-chart-bar{
-    /* border:1px solid red; */
     width:35px;
     height: 43%;
     flex-wrap: nowrap;
     border-radius: 4px;
     background-color: var(--color-soft-red);
 }
-#expense-chart-bar-mon{
-    height:100%;
+.expense-chart-bar:hover{
+    cursor:pointer;
+    opacity: 0.7;
 }
 /* Expense chart day  */
 .expense-chart-day{
@@ -146,7 +147,36 @@ p{
 }
 .expense-balance-percentage{
     text-align: end;
+    color:var(--color-dark-brown)
+}
+.test{
+    display: inline-flex;
+    position: relative;
+    top:-38px;
+    left:-6px;
+    height:30px;
+    max-width:60px;
+    background-color: black;
+    color:white;
+    font-size: smaller;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    opacity: 1;
+    
+}
+.hidden{
+    display: none;
 }
 /* For Mobile end*/
 
 /* Desktop Start */
+@media screen and (min-width:1000px) {
+    html{
+        width:auto;
+    }
+    .expense{
+        margin: 20px auto;
+    }
+    
+}
